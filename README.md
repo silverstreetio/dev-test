@@ -57,7 +57,9 @@ It's also hopefully a chance to pitch ourselves to you, the developer considerin
   2. You'll need to install npm and nodejs on your machine.
   3. The dependencies must be installed with `npm install` from the cloned directory.
   4. You can start the server hot with `npm run dev`.
+  
   Congratulations, the stack is running, the application can be visited at localhost:3000, and any changes you make will be hot reloaded, no server restart needed!
+
   From here on, the only remaining concern is solving the problem using your wit and creativity!
 
 ## About the stack:
