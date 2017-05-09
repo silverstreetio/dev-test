@@ -28,6 +28,5 @@ node_modules
 build
 dist
 _tmp
-public
 .DS_Store
 yarn.lock
