@@ -45,9 +45,9 @@ What we're looking for:
 
 If interested in working with us:
 
-  Send me an email at @eplata.com with your resume / portfolio, and we'll schedule an interview.
+  Send me an email at jobs@eudoraglobal.com with your resume / portfolio, and we'll schedule an interview.
   To go straight to the front of the line, please demonstrate your skill by forking this repo and making a PR to make the game winnable or add a feature.
-  If you feel your aptitude may be under-represented by your resume, then this is a chance to really show your stuff.
+  If you feel your aptitude may be under-represented by your resume, then this is your chance to really showcase your knowledge!
 
 If you'd like help getting started:
 
