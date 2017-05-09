@@ -8,9 +8,9 @@ const path = require('path')
 // dev mode or prod
 const isDev = exports.isDev = process.env.NODE_ENV !== 'production'
 // port used by express
-const PORT = exports.PORT = process.env.PORT || 8080
+const PORT = exports.PORT = isDev ? process.env.PORT || 8080 : 80
 // webpack and server host
-const HOST = exports.HOST = process.env.HOST || 'localhost'
+const HOST = exports.HOST = isDev ? process.env.HOST || 'localhost' : 'lineupmedia.stacktest.fm'
 
 const signal = exports.signal = 'server is running at'
 
