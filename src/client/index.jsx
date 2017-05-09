@@ -9,10 +9,9 @@ import configureStore from 'configureStore'
 import { route as routes } from '../Application'
 import reducers from 'modules'
 
-if (__DEV__) {
+if (__DEV__)
   // Export React and Performance Utility for debugging
   window.React = React
-}
 
 const store = configureStore(reducers)(window.__INITIAL_STATE__)
 const rootEl = document.getElementById('app')

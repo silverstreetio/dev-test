@@ -36,7 +36,7 @@ const Html = ({
       <meta charSet='utf-8'/>
       <meta content='IE=edge,chrome=1' httpEquiv='X-UA-Compatible'/>
 
-      <title>Universal React Webpack Boilerplate</title>
+      <title>Get the ball to the goal!</title>
 
       <meta content='' name='description'/>
       <meta content='' name='keywords'/>
@@ -48,11 +48,11 @@ const Html = ({
       <meta content='notranslate' name='google'/>
 
       {/* Viewport and mobile */}
-      <meta content='width = device-width,
+      <meta content={`width = device-width,
                      initial-scale = 1,
                      user-scalable = no,
                      maximum-scale = 1,
-                     minimum-scale = 1'
+                     minimum-scale = 1`}
         name='viewport'
         />
       <meta content='true' name='HandheldFriendly'/>
@@ -75,10 +75,14 @@ const Html = ({
       <meta content='#ffffff' name='msapplication-TileColor'/>
       <meta content='/ms-icon-144x144.png' name='msapplication-TileImage'/>
       <meta content='#ffffff' name='theme-color'/>
-
-      {!isDev && <link href={styles} rel='stylesheet'/>}
     </head>
-    <body>
+    <body style={{
+      background: '#fff',
+      fontFamily: '\'Gotham\', sans-serif',
+      padding: '0',
+      margin: '0',
+      border: '0',
+    }}>
       <div id='app'>
         <div dangerouslySetInnerHTML={{ __html: content }}/>
       </div>
@@ -95,9 +99,9 @@ Html.propTypes = {
   app: PT.string.isRequired,
   content: PT.string.isRequired,
   initalState: PT.object.isRequired,
+  vendor: PT.string.isRequired,
   inline: isDev ? PT.bool : PT.string.isRequired,
   styles: isDev ? PT.bool : PT.string.isRequired,
-  vendor: PT.string.isRequired,
 }
 
 Html.defaultProps = {

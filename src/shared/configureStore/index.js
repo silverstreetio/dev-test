@@ -1,9 +1,9 @@
-
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux'
+import gameModel from '../../Application/model'
 import promiseMiddleware from 'redux-promise-middleware'
 import thunk from 'redux-thunk'
 
-export default (reducers = {}) => (initalState = {}) => {
+export default (reducers = {}) => (initalState = gameModel) => {
   const rootReducer = combineReducers(reducers)
   const middleware = [promiseMiddleware(), thunk]
 

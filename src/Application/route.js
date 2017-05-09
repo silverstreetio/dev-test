@@ -1,18 +1,9 @@
 
-import { route as authorizedRoute } from './components/Authorized'
 import { view as component } from './view.jsx'
-import { route as loginRoute } from './components/Login'
+import { update as reducer } from './update'
 
 export const route = {
   path: '/',
   component,
-  indexRoute: {
-    onEnter: ({ location: { pathname } }, replace) => {
-      replace(`${pathname}login`)
-    }
-  },
-  childRoutes: [
-    authorizedRoute,
-    loginRoute
-  ]
+  reducer,
 }

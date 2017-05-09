@@ -1,152 +1,70 @@
-# ![unireact](http://martinbroder.com/unireact-logo.svg)
+Hello, and thank you for looking at the codebase for our developer test!
+This is a bit of a preview of some of the problems you'd face working here.
+It's also hopefully a chance to pitch ourselves to you, the developer considering us.
 
-[![Build Status](https://travis-ci.org/mrtnbroder/isomorphic-react-webpack-boilerplate.svg?branch=master)](https://travis-ci.org/mrtnbroder/isomorphic-react-webpack-boilerplate)
-![dependency badge](https://david-dm.org/mrtnbroder/universal-react-webpack-boilerplate.svg)
-[![devDependency Status](https://david-dm.org/mrtnbroder/universal-react-webpack-boilerplate/dev-status.svg)](https://david-dm.org/mrtnbroder/universal-react-webpack-boilerplate#info=devDependencies)
+About us:
 
-unireact is an universal react boilerplate that features
-an awesome dev environment with hot-reload, a lean dependency tree and the
-ability to quickly bootstrap your own applications.
+  Our name is Eudora Global, and we're a cultivation capital.
+  We are incubating several active companies in various industries, from professional gaming to international banking.
+  Working with us in-house involves having a lot more fun than your typical dev 9 - 5, unless your job currently entails:
 
-## Table of Contents
-* [Get Started](#get-started)
-  * [Production Build](#production-build)
-  * [Development Flow](#development-flow)
-* [Dependencies](#dependencies)
-* [Features](#features)
-  * [Hot Reload](#hot-reload)
-  * [Babel](#babel)
-* [Ecosystem](#ecosystem)
-  * [Directory Structure](#directory-structure)
-  * [Component Structure](#component-structure)
-* [Credits](#credits)
+    * Going to professional Halo 5 tournaments
+    * Staying in haunted mansions until midnight
+    * Having Owner/CEO hosted made-up office sports tournaments for real prizes (racing backwards in rolling chairs?)
+    * Pizza eating contests, and meeting senators, musicians, and athletes
 
-## Get started
+  If the above doesn't explain enough about us, I'm not sure what else I got.
 
-Install dependencies
+Work Description:
 
-```shell
-$ npm i
-```
+  Expectations:
 
-Then start development with
+    * Troubleshoot bugs in Node, Cordova, and the browser. This may be platform specific or a core code issue.
+    * Communicate over Git and do maybe one or two meetings a week. I do one.
+    * Dive into other people's code. Make mistakes. Learn from them!
 
-```shell
-$ npm run dev
-```
+  Salary & Benefits:
 
-### Production Build
+    * $60K - $100K commensurate with experience, above industry average
+    * Very Flexible Vacation, Holiday, PTO (the policy is literally take what you need, don't abuse it, communicate with others)
+    * Optional Benefits (medical, dental, pre tax IRA)
 
-Build the production version with
+What we're looking for:
 
-```shell
-$ npm run build
-```
+  Qualifications:
 
-Then run the production server with
+    We're looking for developers with a few years experience in NodeJS, who are interested in long term employment.
+    Our current dream stack uses React, SQL, Cordova, Serverless, and GraphQL, so experience here is  considered a plus.
 
-```shell
-$ npm start
-```
+  Culture:
 
-### Development Flow
+    * Work Life Balance: Enjoy your evening, enjoy your weekend. We try to avoid taking these up if at all possible.
+    * Ready to Sprint: However, sometimes its all on the line and us devs have to lean in. Can we count on you in the clutch?
+    * Tolerant: We have lots of different opinions on things, but we all agree that its okay to disagree.
+    * Young and Old: We have some younger people here, and some older people here. Expect some Zeppelin.
 
-* `webpack-dev-server` serves the client lib with hot-reload enabled
-* `webpack` watches src/server for changes and compiles to `_tmp/server/`
-* `nodemon` watches for server rebuilds and automatically restarts when a change happened.
+If interested in working with us:
 
-#### Hot Reloading
+  Send me an email at @eplata.com with your resume / portfolio, and we'll schedule an interview.
+  To go straight to the front of the line, please demonstrate your skill by forking this repo and making a PR to make the game winnable or add a feature.
+  If you feel your aptitude may be under-represented by your resume, then this is a chance to really show your stuff.
 
-Please note that hot reloading only works when your top-level component is
-a react class component. Hot reloading of stateless components at the top
-doesn't work yet as react-hmr is not able to figure out if your function
-returns a react element.
+If you'd like help getting started:
 
-## Dependencies
+  First you'll need to fork and clone this repo.
+  Once cloned, you'll need to install npm and nodejs on your machine.
+  Next, the dependencies must be installed with `npm install` from the cloned directory.
+  Last, you can start the server hot with `npm run dev`.
+  Congratulations, the stack is running, the application can be visited at localhost:3000, and any changes you make will be hot reloaded, no server restart needed!
+  From here on, the only remaining concern is solving the problem using your wit and creativity!
 
-unireact is depending several libraries to handle things like async actions, routing, state management etc. Please get to each of them first when you have questions about how to work with them.
+About the stack:
 
-* [express](https://github.com/strongloop/express/)
-* [react](https://github.com/facebook/react)
-* [react-redux](https://github.com/rackt/react-redux) (redux bindings for react)
-* [react-router](https://github.com/rackt/react-router)
-* [redux](https://github.com/rackt/redux/) (predictable state container)
-* [redux-actions](https://github.com/acdlite/redux-actions) (human friendly standard for flux actions)
-* [redux-promise-middleware](https://github.com/pburtchaell/redux-promise-middleware) (handle promises for optimistic updates)
-* [redux-thunk](https://github.com/gaearon/redux-thunk) (allow async actions)
+  This code was originally forked off of:
 
-## Features
+  # ![unireact](http://martinbroder.com/unireact-logo.svg)
+  
+  For more info about this stack, check out the repo here: https://github.com/mrtnbroder/universal-react-webpack-boilerplate
+  The reason this repo was chosen is that it's well maintained, open source, and has many architectural similarities to what we're using here at Eudora.
+  We have made several different architectural decisions, but if you are apt around this style of codebase, you'll likely be comfortable around ours as well.
 
-### Hot Reload
-
-Speed up your development workflow with [webpack](webpack.github.io)'s awesome [Hot Module System](https://webpack.github.io/docs/hot-module-replacement.html). Using [babel-transform-hmr](https://github.com/gaearon/react-transform-hmr)
-you can write your react components and have them updated in an instant without the need to reload your page.
-
-(Note: stateless react components require a full page-reload. webpack takes care of that though.)
-
-### ES2015/16 with Babel
-
-You can start writing ES 2015/16 within the src directory, as everything in there will be transpiled with [babel](https://babeljs.io/). Currently included is the preset for [es2015](https://babeljs.io/docs/plugins/preset-es2015/) (allows jsx syntax) and [stage-0](https://babeljs.io/docs/plugins/preset-stage-0/) (async/await).
-
-## Ecosystem
-
-### Directory Structure
-
-```bash
-.
-├── config
-│   ├── config.js           # holds environment variables and some basic configurations like the host, port etc. used by express or webpack-dev-server
-│   └── paths.js            # build paths for webpack but also for the entire app
-├── src
-│   ├── client              # code that only lives on the client
-│   │   └── index.jsx       # renders the react app and has some dev stuff
-│   ├── shared              # shared code between the client and the server
-│   │   ├── actions         # redux actions
-│   │   ├── constants       # redux constants
-│   │   ├── reducers        # redux reducers
-│   │   ├── stores          # redux store configuration
-│   │   ├── utils           # utils (e.g. WebAPIUtil)
-│   │   └── routes          # view routes (server + client router)
-│   ├── server              # server side stuff
-│   │   ├── middlewares     # middlewares for express (you may want to add your api endpoints here)
-│   │   └── index.js        # starts the express server
-│   └── views               # contains all the views, e.g. the frontpage
-│       ├── root.jsx        # root handler that renders all children
-│       └── html.jsx        # renders the <html> page on the server
-├── webpack
-│   ├── index.js                    # used by webpack-dev-server to serve the client and server when developing
-│   ├── webpack.client.config.js    # client-side webpack configuration
-│   ├── webpack.config.js           # shared webpack configuration between server and client
-│   └── webpack.server.config.js    # server-side webpack configuration
-├── README.md
-├── index.js      # starts the production server (you need to run `npm run build` first)
-├── package.json
-```
-
-### Component Structure
-
-To make components shareable and contained, components that need to expose
-their state within a reducer should follow this structure:
-
-```bash
-├── components # pure components *only*
-│   ├── image.jsx # pure component that renders the product image
-│   ├── price.jsx # pure component that renders the product price
-│   └── product.jsx # pure component that renders the product page
-├── actions
-│   ├── productActions.js # actions only used within this directory
-├── constants
-│   ├── productConstants.js # constants only used within this directory
-├── reducers
-│   ├── index.js # exports all reducers within this directory, so we can easily import it by our root reducer
-│   └── products.js # reducer only used by products.jsx
-└── products.jsx # this is our container component that imports from components
-```
-
-When following this structure, you makes things easier to reason about and your component stays contained. It will only ever reach out to whats inside this directory and not touch anything else.
-
-When other components need to interact with your local state, you should move your actions and reducers one level up (until they reach the top level lib directory).
-
-### Credits
-
-Thanks go out to [kriasoft](https://github.com/kriasoft) and the team of [este](https://github.com/este/este) as I took some inspiration from these awesome guys!
