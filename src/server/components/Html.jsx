@@ -1,19 +1,15 @@
 
-import { appName, cssName, inlineName, isDev, outputPath, statsName, vendorName } from '../../../webpack/env'
+import { appName, inlineName, isDev, outputPath, statsName, vendorName } from '../../../webpack/env'
 import React, { PropTypes as PT } from 'react'
 import fs from 'fs'
 
+const stats = isDev ? null : JSON.parse(
+  fs.readFileSync(`${outputPath}/${statsName}.json`)
+)
+
 export const getScript = (name) => {
   if (isDev) return `/${name}.js`
-
-  const file = fs.readFileSync(`${outputPath}/${statsName}.json`)
-  const stats = JSON.parse(file)
-
-  return name === appName && !isDev
-    ? `/${stats.assetsByChunkName[appName][0]}`
-    : name === cssName && !isDev
-      ? `/${stats.assetsByChunkName[appName][1]}`
-      : `/${stats.assetsByChunkName[name]}`
+  return `/${stats.assetsByChunkName[name]}`
 }
 
 export const getWebpackJsonpInlineScript = () => isDev
@@ -25,7 +21,6 @@ const Html = ({
   content,
   initalState,
   inline,
-  styles,
   vendor,
 }) => (
   <html
@@ -101,13 +96,11 @@ Html.propTypes = {
   initalState: PT.object.isRequired,
   vendor: PT.string.isRequired,
   inline: isDev ? PT.bool : PT.string.isRequired,
-  styles: isDev ? PT.bool : PT.string.isRequired,
 }
 
 Html.defaultProps = {
   app: getScript(appName),
   inline: getWebpackJsonpInlineScript(),
-  styles: getScript(cssName),
   vendor: getScript(vendorName),
 }
 
