@@ -8,7 +8,7 @@ import path from 'path'
 // dev mode or prod
 export const isDev = process.env.NODE_ENV !== 'production'
 // port used by express
-export const PORT = process.env.PORT || 8080
+export const PORT = isDev ? process.env.PORT || 8080 : 80
 // webpack and server host
 export const HOST = process.env.HOST || 'localhost'
 
