@@ -32,7 +32,7 @@ To see the problem I'm talking about in this codebase, check out the [Demo](http
 
   ### Salary & Benefits:
 
-  * $80K - $100K commensurate with experience
+  * Salary commensurate with industry average and experience 
   * Very Flexible Vacation, Holiday, PTO (the policy is literally take what you need, don't abuse it, communicate with others)
   * Optional Benefits (medical, dental, pre tax IRA)
 
