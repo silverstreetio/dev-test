@@ -6,7 +6,6 @@ This is also a bit of a preview of some of the problems you'd face working here.
 
 To see the problem I'm talking about in this codebase, check out the [Demo](http://stacktest.lineupmedia.fm)
 
-
 ## About us:
 
   We are a cultivation capital, and we'll have been around for 10 years this August.
@@ -32,16 +31,16 @@ To see the problem I'm talking about in this codebase, check out the [Demo](http
 
   ### Salary & Benefits:
 
-  * Salary commensurate with industry average and experience 
-  * Very Flexible Vacation, Holiday, PTO (the policy is literally take what you need, don't abuse it, communicate with others)
-  * Optional Benefits (medical, dental, pre tax IRA)
+  * $70 - $110k, linearly interpolated based on an experience range of 2 - 5 years Isomorphic Node
+  * Very flexible vacation, holiday, PTO (the policy is literally take what you need, don't abuse it, communicate with others)
+  * Optional benefits (medical, dental, pre tax IRA)
 
 ## What we're looking for:
 
   ### Qualifications:
 
-  * We're looking for developers with at least 2 years experience in production NodeJS systems and full stack JS, who are interested in long term employment.
-  * Our current dream stack uses React, SQL, Cordova, Serverless, and GraphQL, so experience here is considered a plus.
+  * We're looking for mid to senior level NodeJS developers with at least 2 years experience in production NodeJS systems and full stack JS, who are interested in long term employment.
+  * Our current dream stack uses React, SQL, Cordova, Serverless, and GraphQL, so experience in these areas is considered a plus.
 
   ### Culture:
 
@@ -56,7 +55,7 @@ To see the problem I'm talking about in this codebase, check out the [Demo](http
   
   To go straight to the front of the line, please demonstrate your skill by forking this repo and making a PR to make the game winnable or add a feature.
   
-  If you feel your aptitude may be under-represented by your resume, then this is your chance to really showcase your knowledge!
+  If you feel your aptitude may be under-represented by your resume, then this is your chance to showcase your knowledge!
 
 ## If you'd like help getting started:
 
